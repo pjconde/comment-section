@@ -1,0 +1,23 @@
+<app-toolbar [forHomePage]="true"></app-toolbar>
+
+<mat-grid-list
+  *ngIf="(userPosts$ | async) as posts"
+  cols="2"
+  rows="'posts.length'"
+  rowHeight="2:1"
+  class="post-grid">
+  <mat-grid-tile *ngFor="let post of posts">
+    <mat-card (click)="handleCardClick(post.id)" class="post-card">
+      <img mat-card-md-image class="post-card__image" src="../../../assets/placeholder.jpg">
+      <div>
+        <div class="post-card__title-div">
+          <mat-card-title class="post-card__title">{{ post.title }}</mat-card-title>
+        </div>
+        <div class="post-card__forum-div">
+          <mat-icon class="post-card__forum-button">forum</mat-icon>
+          <span class="post-card__forum-count">{{ post.comments.length }}</span>
+        </div>
+      </div>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,10 @@
+<mat-toolbar color="primary" class="toolbar">
+    <a mat-icon-button routerLink="/home" *ngIf="!forHomePage">
+        <mat-icon>home</mat-icon>
+    </a>
+    <span>{{ homepageTitle }}</span>
+    <span class="toolbar__spacer"></span>
+    <button mat-icon-button (click)="openDialog()">
+        <mat-icon>notifications</mat-icon>
+      </button>
+</mat-toolbar>

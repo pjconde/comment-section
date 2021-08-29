@@ -1,0 +1,41 @@
+.post-card {
+    width: 80%;
+    height: 80%;
+
+    &__image {
+        margin-bottom: 1rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 75%;
+    }
+
+    &__title {
+        display: flex;
+        width: 20rem;
+    }
+
+    &__title-div {
+        float: left;
+        width: 19rem;
+    }
+
+    &__forum-div {
+        float: right;
+        width: 3.5rem;
+    }
+
+    &__forum-count {
+        margin-left: .25rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.form-button-div {
+    float: right;
+}
+
+.form-title-div {
+    float: left;
+}

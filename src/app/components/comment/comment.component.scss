@@ -1,0 +1,13 @@
+.comment-card {
+    padding-bottom: 2rem !important;
+}
+
+.comment-subtitle-div {
+    &__name {
+        float: left;
+    }
+
+    &__date {
+        float: right;
+    }
+}

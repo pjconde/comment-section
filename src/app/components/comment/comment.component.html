@@ -1,0 +1,11 @@
+<mat-card class="comment-card" *ngIf="comment">
+    <span>{{ comment.message }}</span>
+    <div comment-subtitle-div>
+        <div class="comment-subtitle-div__name">
+            <mat-card-subtitle>{{ comment.name }}</mat-card-subtitle>
+        </div>
+        <div class="comment-subtitle-div__date">
+            <mat-card-subtitle>{{ comment.created | date:'short' }}</mat-card-subtitle>
+        </div>
+    </div>
+</mat-card>
